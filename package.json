@@ -1,0 +1,32 @@
+{
+  "name": "ccim",
+  "version": "1.0.0",
+  "description": "<img height=\"180\" align=\"left\" src=\"https://image.flaticon.com/icons/png/512/1478/1478911.png\" alt=\"CCIM\">",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "sequelize db:migrate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajat-banerjee/ccim.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajat-banerjee/ccim/issues"
+  },
+  "homepage": "https://github.com/rajat-banerjee/ccim#readme",
+  "dependencies": {
+    "cron": "^1.8.2",
+    "dotenv": "^10.0.0",
+    "googleapis": "^84.0.0",
+    "node-telegram-bot-api": "^0.54.0",
+    "pg": "^8.7.1",
+    "sequelize": "^6.6.5",
+    "sequelize-auto-migrations": "^1.0.3",
+    "sequelize-auto-migrations-v2": "^1.2.1",
+    "sequelize-cli": "^6.2.0"
+  }
+}

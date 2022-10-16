@@ -1,0 +1,21 @@
+{
+  "apps": [{
+    "name": "evm-timelock-scanner",
+    "script": "node index.js",
+    "env": {
+      "NODE_ENV": "production"
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm:ss Z"
+  }],
+
+  "deploy" : {
+    "production" : {
+      "user" : "ubuntu",
+      "host" : ["ales-rpi4"],
+      "ref"  : "origin/main",
+      "repo" : "git@github.com:rajat-banerjee/ccim.git",
+      "path" : "/home/ubuntu/repos/ccim",
+      "post-deploy" : "export NODE_ENV=production && git submodule update --recursive && cd evm-timelock-scanner && npm i && pm2 startOrGracefulReload ecosystem.json --update-env"
+    }
+  }
+}

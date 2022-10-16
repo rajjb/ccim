@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "097astsf",
+    "database": "ccim",
+    "host": "localhost",
+    "port": "5432",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "097astsf",
+    "database": "ccim",
+    "host": "localhost",
+    "port": "5432",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "ccim",
+    "password": "password",
+    "database": "ccim",
+    "host": "localhost",
+    "port": "5432",
+    "dialect": "postgres"
+  }
+}
